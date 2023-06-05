@@ -6,7 +6,6 @@ jobs:
       - image: katherinetrammell/ci-image
     steps:
       - checkout
-      - run: echo "hello world"
 workflows:
   build-docker-workflow:
     jobs:
