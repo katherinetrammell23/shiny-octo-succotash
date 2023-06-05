@@ -3,7 +3,7 @@ version: 2.1
 jobs:
   build-docker:
     docker:
-      - image: katherinetrammell/ci-image
+      - image: cimg/node:14.17-browsers
     steps:
       - checkout
 workflows:
