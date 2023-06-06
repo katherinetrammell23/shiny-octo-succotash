@@ -6,6 +6,8 @@ jobs:
       - image: cimg/node:14.17
     steps:
       - run: node --version
-  build-docker-workflow:
-    jobs:
-      - build-docker
+
+workflows:
+build-docker-workflow:
+  jobs:
+    - build-docker
