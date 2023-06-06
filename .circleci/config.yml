@@ -1,13 +1,12 @@
 version: 2.1
-
 jobs:
-  build-docker:
+  say-hello:
     docker:
-      - image: cimg/node:14.17
+      - image: cimg/node:20.2.0
     steps:
       - run: node --version
 
 workflows:
-build-docker-workflow:
-  jobs:
-    - build-docker
+  say-hello-workflow:
+    jobs:
+      - say-hello
